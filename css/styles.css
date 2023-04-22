@@ -183,13 +183,6 @@ padding: 20px 0;
     padding: 120px 0;
 }
 
-.hidden-sektion{
-    
-}
-.products-procesing-contejner{
-
-}
-
 .products-procesing{
 display: flex;
 }
@@ -211,11 +204,6 @@ margin-bottom: 8PX;
 
 }
 
-.produkt-item-wrap{
-}
-
-
-
 .produkt-icon-link{
     width: 262px;
     height: 112px;   
@@ -227,9 +215,7 @@ margin-bottom: 8PX;
     margin-bottom: 8px;
 }
 
-.produkt-icon{
 
-}
 .products-procesing-text{
     font-weight: 400;
     font-size: 16px;
@@ -282,10 +268,6 @@ display: block;
 
 }
 
-.team-contejner{
-
-
-}
 .team{
     font-weight: 700;
     font-size: 36px;
@@ -363,9 +345,6 @@ background-color: #FFFFFF;
 .team-icon{
     fill: #F4F4FD;
 }
-.team-foto{
-
-}
 /* ------------------sektion 5------------------- */
 .customers {padding: 120px;
 }
@@ -421,19 +400,24 @@ border-color: #404BBF;
     background-color: #2e2f42;
     padding: 100px 0;
 }
-.footer-list{
-    display: flex;
 
-}
 .footer-item{
-
+display: flex;
 }
 .logo-footer{
 margin-bottom: 8px;
 }
 
 .footer-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 0.66;
+    letter-spacing: 0.02em;
+    color: #F4F4FD;
+}
 
+.soc-contejner{
+margin-right: 80px;
 }
 .social-text{
     font-family: 'Roboto';
@@ -515,9 +499,7 @@ margin-bottom: 8px;
     padding-bottom: 120px ;
 }
 
-.filters{
 
-}
 .portrtfolio-list {
     display: flex;
     padding-left: 0;
@@ -529,8 +511,7 @@ margin-bottom: 8px;
 img{display: block;
 max-width: 100%;
 height: auto;}
-.portfolio-item{
-}
+
 
 .filters-btn{
     font-family: "Roboto", sans-serif;
@@ -568,21 +549,12 @@ height: auto;}
     padding: 32px;
 }
 /* ------------------ sektione2 (portfolio) ------------- */
-.sektion-btn{
-
-}
-.lisr-item-btn{
-
-
-}
 
 .btn-list {
     display: flex;
     flex-wrap: wrap;
     gap: 48px 24px;
 }
-
-.lisr-item-btn {}
 
 .contejner-porfolio-wrap {
     position: relative;
@@ -610,13 +582,14 @@ height: auto;}
     padding: 40px;
     top: 0;
     background-color: #4D5AE5;
-    font-size: 18px;
-    font-weight: 600;
     color: #ffffff;
     height: 100%;
     transform: translateY(100%);
     transition: transform 250ms ease-in-out;
     overflow: auto;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.02em;
 }
 
 .sektion-btn-name-app {
@@ -635,6 +608,9 @@ height: auto;}
     letter-spacing: 0.02em;
     color: #434455;
 }
+.sub-btn-wrap{
+    display: flex;
+}
 .sub-btn{
     width: 165px;
     height: 40px;
@@ -644,19 +620,23 @@ height: auto;}
     color: #FFFFFF;
     font-weight: 500;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 0.66;
     letter-spacing: 0.02em;
     color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 24px;
+    gap: 16px;
+    cursor: pointer;
+    outline: none;
 }
-.sub-btn-wrap{
 
-}
 .sub-icons{
-width: 24px;
-height: 24px;
-position: absolute;
-fill: #FFFFFF;
-
+        width: 24px;
+    height: 24px;
+    fill: #FFFFFF
 }
 .btn-contejner {
     border-right-width: 1px;
@@ -670,11 +650,6 @@ fill: #FFFFFF;
     border-left-color: #E7E9FC;
 }
 
-.subscribe-sectione{
-
-}
-
-
 .subscribe-titel{
     font-weight: 500;
     font-size: 16px;
@@ -687,11 +662,16 @@ fill: #FFFFFF;
     width: 264px;
     height: 40px;
     margin: 16px 24px 0 0;
+    border: 1px solid #FFFFFF;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
-    border: none;
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
+    background-color: transparent;
+    color: #FFFFFF;
+    padding: 10px
+
 }
 
 /* -----------------------------MODAL---------------------------- */
@@ -707,7 +687,6 @@ fill: #FFFFFF;
 
 .modal{
     width: 408px;
-    min-height: 584px;
     background-color: #fff;
     border-radius: 4px;
     position: absolute;
@@ -715,7 +694,11 @@ fill: #FFFFFF;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
     transition: transform 250ms ease-in-out;
-    padding: 20px;
+    padding-top: 72px;
+    padding-right:  20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    
 }
 .backdrop.is-hidden .modal{
     transform: translate(-50%, -50%) scaleY(0);
@@ -725,13 +708,12 @@ fill: #FFFFFF;
     width: 24px;
     height: 24px;
     border-radius: 50px;
-    border-color: transparent;
-    display: block;
-    margin-left: auto;
-    fill: #8E8F99;
-    border: solid 1px #999;
+    position: absolute;
 }
 
+.btn-close-icons{
+
+}
 
 .is-hidden{
 opacity: 0;
