@@ -459,6 +459,7 @@
                   class="sub-input"
                   type="email"
                   required=""
+                  placeholder="E-mail"
                 />
                 <button class="sub-btn">
                   Subscribe<svg class="sub-icons">
@@ -482,19 +483,21 @@
         <p class="modal-titel">Leave your contacts and we will call you back</p>
         <form class="modal-form">
           <div class="input-contejner">
-            <label class="modal-label">
-              <span class="label-text"> Name </span>
-              <input
-                type="text"
-                name="name"
-                class="modal-input"
-                placeholder=""
-                required
-              />
-            </label>
-            <svg class="modal-icons">
-              <use href="./images/icons.svg#icon-person"></use>
-            </svg>
+            <div class="input-wrap">
+              <label class="modal-label">
+                <span class="label-text"> Name </span>
+                <input
+                  type="text"
+                  name="name"
+                  class="modal-input"
+                  placeholder=""
+                  required
+                />
+              </label>
+              <svg class="modal-icons">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
           </div>
           <div class="input-contejner">
             <label class="modal-label">
@@ -525,9 +528,10 @@
               <use href="./images/icons.svg#icon-email"></use>
             </svg>
           </div>
-          <div class="input-contejner">
+          <div class="input-contejner-check">
             <label class="modal-label" for="user-text"
-              >Comments<textarea
+              ><span class="label-text">Comments</span
+              ><textarea
                 name="user-text"
                 id="user-text"
                 class="modal-textarea"
