@@ -743,9 +743,7 @@ pointer-events: none;
     margin-top: 24px;
     margin-bottom: 16px;
 }
-.input-wrap{
-    position: relative;
-}
+
 .modal-form .modal-input:focus + .modal-icons {
     fill: #3f51b5;
 }
