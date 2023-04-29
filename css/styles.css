@@ -1,9 +1,10 @@
-body{ max-width: 1440px;
-font-family: "Roboto", sans-serif;
-color: #434455;
-background-color: #FFFFFF;
-padding: 0;
-margin: 0 auto;
+body:lang(en) {
+    max-width: 1440px;
+    font-family: "Roboto", sans-serif;
+    color: #434455;
+    background-color: #FFFFFF;
+    padding: 0;
+    margin: 0 auto;
 }
 .list{ list-style: none; 
     padding: 0;
@@ -525,7 +526,7 @@ height: auto;}
     text-align: center;
     letter-spacing: 0.04em;
     color: #4d5ae5;
-    background-color:#F4F4FD transparent;
+    background-color: #f4f4fd;
     cursor: pointer;
     padding: 12px 24px 12px 24px;
     border-radius: 4px;
@@ -546,9 +547,6 @@ height: auto;}
     0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 2px 1px rgba(46, 47, 66, 0.08);
 }
-.btn-contejner{
-    border: bottom, left, right,#E7E9FC  1px; 
-    padding: 32px;
 }
 /* ------------------ sektione2 (portfolio) ------------- */
 
@@ -734,7 +732,6 @@ visibility: hidden;
 pointer-events: none;
 }
 .modal-titel{ 
-    font-style: 16px;
     font-weight: 500;
     text-align: center;
     line-height: 24px;
@@ -864,7 +861,7 @@ height: 58px;
     border: 0;
     padding: 0;
     white-space: nowrap;
-    clip-path: inset (100%);
+    clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
